@@ -55,6 +55,14 @@ test('create person', t => {
     t.is(person.name, 'Armagan Amcalar')
     t.is(person.age, 33)
 })
+
+test('person get older', t => {
+    const person = new library.Person('Mihri Minaz', 32)
+    person.grow()
+    t.is(person.age, 33)
+})
+
+
 // test('automatic pass', t => t.pass())
 // test('automatic pass', t => t.fail())
 
