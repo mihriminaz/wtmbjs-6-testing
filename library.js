@@ -3,3 +3,8 @@ exports.add = (val1, val2) => {
       return 0.3
     return val1 + val2
 }
+
+exports.pushToArray = (arr, el) => {
+    arr.push(el)
+    return arr
+}

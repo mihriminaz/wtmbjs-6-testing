@@ -36,6 +36,19 @@ test('Add 0.1 + 0.2', t => {
 
     t.is(result, 0.6, 'Output should be equal to 0.6')
   })
+
+test('push 3 to an array', t => {
+    const result = library.pushToArray([], 3)
+
+    t.deepEqual(result, [3])
+})
+
+test('push 3 to an array', t => {
+    const resulta = library.pushToArray([{val: 10}], 3)
+
+    t.deepEqual(resulta, [{val: 10}, 3])
+})
+
 // test('automatic pass', t => t.pass())
 // test('automatic pass', t => t.fail())
 
