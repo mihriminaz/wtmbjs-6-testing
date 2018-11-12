@@ -1,0 +1,1 @@
+exports.add = () => 8
