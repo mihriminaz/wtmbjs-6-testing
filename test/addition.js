@@ -44,9 +44,9 @@ test('push 3 to an array', t => {
 })
 
 test('push 3 to an array', t => {
-    const resulta = library.pushToArray([{val: 10}], 3)
+    const resulta = library.pushToArray([{val: 10}, 20, {person: 'mihri'}], 3)
 
-    t.deepEqual(resulta, [{val: 10}, 3])
+    t.deepEqual(resulta, [{val: 10}, 20, {person: 'mihri'}, 3])
 })
 
 // test('automatic pass', t => t.pass())
