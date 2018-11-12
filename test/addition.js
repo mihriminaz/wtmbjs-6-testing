@@ -31,6 +31,11 @@ test('Add 0.1 + 0.2', t => {
     t.is(result, 1.1, 'Output should be equal to 1.1')
   })
 
+  test('Add 0.4 + 0.2', t => {
+    const result = library.add(0.4, 0.2)
+
+    t.is(result, 0.6, 'Output should be equal to 0.6')
+  })
 // test('automatic pass', t => t.pass())
 // test('automatic pass', t => t.fail())
 
