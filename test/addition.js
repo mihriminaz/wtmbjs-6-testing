@@ -49,6 +49,12 @@ test('push 3 to an array', t => {
     t.deepEqual(resulta, [{val: 10}, 20, {person: 'mihri'}, 3])
 })
 
+test('create person', t => {
+    const person = new library.Person('Armagan Amcalar', 33)
+
+    t.is(person.name, 'Armagan Amcalar')
+    t.is(person.age, 33)
+})
 // test('automatic pass', t => t.pass())
 // test('automatic pass', t => t.fail())
 
