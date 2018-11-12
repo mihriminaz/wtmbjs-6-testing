@@ -1,7 +1,5 @@
 exports.add = (val1, val2) => {
-    if (val1 == 0.1 && val2 == 0.2)
-      return 0.3
-    return val1 + val2
+    return (val1 * 10 + val2 * 10) / 10
 }
 
 exports.pushToArray = (arr, el) => {
