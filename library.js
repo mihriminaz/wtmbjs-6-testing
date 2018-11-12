@@ -12,4 +12,7 @@ exports.Person = class {
         this.name = name
         this.age = age
     }
+    grow() {
+        this.age++
+    }
 }
